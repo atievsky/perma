@@ -12,13 +12,13 @@
     <div class="col-xs-12">
       <h1 class="page-title">Thanks!</h1>
       {% if registrar %}
-        <p class="page-dek">Your message was successfully sent to {{registrar.name}} and the Perma.cc team:</p>
+        <p class="page-dek">Your message was successfully sent to {{registrar.name}} and the cite.law team:</p>
         <ul class="page-dek">{% for user in registrar.active_registrar_users %}
          <li>{{user.get_full_name}} ({{user.email}})</li>{% endfor %}
-         <li>info@perma.cc</li>
+         <li>info@cite.law</li>
         </ul>
       {% else %}
-        <p class="page-dek">Your message was successfully sent to the Perma.cc team.</p>
+        <p class="page-dek">Your message was successfully sent to the cite.law team.</p>
       {% endif %}
     </div><!--col -->
   </div><!--row-->

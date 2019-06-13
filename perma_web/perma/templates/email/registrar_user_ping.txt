@@ -1,4 +1,4 @@
-TITLE: Perma.cc update for Registrars: action requested
+TITLE: cite.law update for Registrars: action requested
 
 Dear {{ first_name }} {{ last_name }}:
 
@@ -21,6 +21,6 @@ If any of this information is wrong, please update the general contact email at 
 
 * Lastly: Our team has prepared a series of guides for registrars and those they support, available both in PDF and on Google Docs, in case you'd like to adapt the text directly. Find guides for academic journals, faculty, and librarians/registrar users here: https://perma.cc/docs/libraries#user-resources. Please share these resources with those in your community!
 
-As always, we welcome your ideas and feedback, and thank you for supporting Perma.cc!
+As always, we welcome your ideas and feedback, and thank you for supporting cite.law!
 
 The Perma Team

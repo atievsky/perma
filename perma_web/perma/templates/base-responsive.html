@@ -1,7 +1,7 @@
 {% load render_bundle from webpack_loader %}<!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Perma.cc{% block title %}{% endblock %}</title>
+    <title>cite.law{% block title %}{% endblock %}</title>
 
     <!-- currently 'edge' or nothing seems to be the best IE mode for modern sites -- see http://stackoverflow.com/a/8942455 -->
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@permacc">
     <meta name="twitter:title" content="Websites change. Perma Links don't.">
-    <meta name="twitter:description" content="Perma.cc helps scholars, journals, courts, and others create permanent records of the web sources they cite.">
+    <meta name="twitter:description" content="cite.law helps scholars, journals, courts, and others create permanent records of the web sources they cite.">
     <meta name="twitter:image" content="{{ request.get_host }}{{ STATIC_URL }}img/create-step-4.png">
 
     <meta property="og:title" content="Websites change. Perma Links don't.">
@@ -49,7 +49,7 @@
                 <span class="icon-bar" aria-hidden="true"></span>
               </button>
               <div class="navbar-brand logo">
-                <a href="{% url 'landing' %}">Perma.cc<span class="sr-only">Home</span><img alt="infinity symbol logo" class="infinity-logo" src="{{ STATIC_URL }}img/perma-logo-orange.svg"></a>
+                <a href="{% url 'landing' %}">cite.law<span class="sr-only">Home</span><img alt="infinity symbol logo" class="infinity-logo" src="{{ STATIC_URL }}img/perma-logo-orange.svg"></a>
               </div>
             </div>
             {% include 'includes/upper_right_menu.html' %}
@@ -94,7 +94,7 @@
                     <li class="footer-nav-item"><a href="https://blogs.law.harvard.edu/perma/">Blog</a></li>
                     <li class="footer-nav-item"><a href="https://twitter.com/permacc">Twitter</a></li>
                     <li class="footer-nav-item"><a href="https://github.com/harvard-lil/perma">GitHub</a></li>
-                    <li class="footer-nav-item"><a href="https://status.perma.cc/">Status</a></li>
+                    <li class="footer-nav-item"><a href="https://status.cite.law/">Status</a></li>
                   </ul>
                 </nav>
               </div>

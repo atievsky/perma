@@ -1118,6 +1118,7 @@ def run_next_capture():
                     meta_tag_analysis_failed(link)
 
             if have_content:
+
                 inc_progress(capture_job, 1, "Saving web archive file")
                 save_warc(warc_writer, capture_job, link, content_type, screenshot, successful_favicon_urls)
                 print "%s capture succeeded." % link.guid

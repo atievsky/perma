@@ -90,8 +90,12 @@ def get_archive_path():
     try:
         archive_path = 'file://' + default_storage.path('') + '/'
     except NotImplementedError:
-        archive_path = default_storage.url('')
-        archive_path = archive_path.split('?', 1)[0]  # remove query params
+        try:
+            archive_path = default_storage.url('')
+            archive_path = archive_path.split('?', 1)[0]  # remove query params
+        except:
+            archive_path = "https://citelaw.s3.amazonaws.com/" #hack
+   
 
     # must be ascii, for some reason, else you'll get
     # 'unicode' object has no attribute 'get'

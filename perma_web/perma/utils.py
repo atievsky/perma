@@ -538,9 +538,11 @@ def get_warc_stream(link):
                  rec_title = 'Perma Archive of %s' % link.submitted_title,
                  pages= [{'title': link.submitted_title, 'url': link.submitted_url}])
 
+
     warc_stream = FileWrapper(default_storage.open(link.warc_storage_file()))
     warc_stream = itertools.chain([warcinfo], warc_stream)
     response = StreamingHttpResponse(warc_stream, content_type="application/gzip")
+    #response = HttpResponse(warc_stream, content_type="application/gzip")
     response['Content-Disposition'] = 'attachment; filename="%s"' % filename
 
     return response
