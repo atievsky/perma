@@ -400,8 +400,8 @@ UPLOAD_TO_INTERNET_ARCHIVE = False
 INTERNET_ARCHIVE_COLLECTION = 'cite_law'
 INTERNET_ARCHIVE_IDENTIFIER_PREFIX = 'cite_law_'
 # Find these at https://archive.org/account/s3.php :
-INTERNET_ARCHIVE_ACCESS_KEY = 'jvnnXAWEvQNkSbtF'
-INTERNET_ARCHIVE_SECRET_KEY = 'CnScB4kmdKMzN9qA'
+INTERNET_ARCHIVE_ACCESS_KEY = ''
+INTERNET_ARCHIVE_SECRET_KEY = ''
 
 from dateutil.relativedelta import relativedelta
 LINK_EXPIRATION_TIME = relativedelta(years=2)
